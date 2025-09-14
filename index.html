@@ -16,21 +16,40 @@
     
 <div class="container text-center">
   
-    <h2 id="game-title"> Whack a Mole Game</h2> <strong> SCORE: </strong><span id="score">0</span>
+    <h2 id="game-title"> Whack a Mole Game</h2>
+    
+    <!-- Score Display -->
+    <div class="score-container">
+        <span class="score-label">SCORE:</span><span id="score">0</span>
+        <div class="timer-section">
+            <span class="timer-label">TIME:</span><span id="timer">30</span>
+        </div>
+    </div>
+    
+    <!-- Game Controls -->
+    <div class="game-controls mt-3 mb-3">
+        <button id="start-btn" class="btn-game start-btn">START GAME</button>
+        <button id="stop-btn" class="btn-game stop-btn" disabled>STOP GAME</button>
+        <div class="speed-controls mt-2">
+            <label class="speed-label">Speed:</label>
+            <button id="slow-btn" class="btn-speed">🐌 SLOW</button>
+            <button id="fast-btn" class="btn-speed active">⚡ FAST</button>
+        </div>
+    </div>
 </div>
 
 <div class="container" id="grid">
-<div class="row">
+<div class="row justify-content-center">
     <div class="square" id="0"> </div>
     <div class="square" id="1"></div>
     <div class="square" id="2"></div>
 </div>
-<div class="row">
+<div class="row justify-content-center">
     <div class="square" id="3"></div>
     <div class="square" id="4"></div>
     <div class="square" id="5"></div>
 </div>
-<div class="row">
+<div class="row justify-content-center">
     <div class="square" id="6"></div>
     <div class="square" id="7"></div>
     <div class="square" id="8"></div>
