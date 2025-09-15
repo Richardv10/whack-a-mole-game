@@ -110,15 +110,6 @@ document.addEventListener("DOMContentLoaded", () => {
             timeLeft--;
             timerElement.textContent = timeLeft;
             
-            // Add warning states
-            if (timeLeft <= 5) {
-                timerElement.className = 'danger';
-            } else if (timeLeft <= 10) {
-                timerElement.className = 'warning';
-            } else {
-                timerElement.className = '';
-            }
-            
             // Game over when timer reaches 0
             if (timeLeft <= 0) {
                 endGame();
